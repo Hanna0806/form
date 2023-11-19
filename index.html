@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="http://test.com" method="get" name="myform">
+        <fieldset>
+            <legend>Общая информация</legend>
+            <label for="username">Введите имя</label>
+            <input type="text" name="name" id="username" placeholder="Имя">
+            <label for="data">Дата рождения</label>
+            <input type="date" list="dateList" id="data">
+        </fieldset>
+
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="phone">Введите телефон</label>
+            <input type="tel" name="phone" id="phone" placeholder="+375-99-9999999">
+            <label for="email">Введите email</label>
+            <input type="email" name="email" id="email" placeholder="mail@mail.ru">
+        </fieldset>
+
+        <fieldset>
+            <legend>Хобби</legend>
+            <label for="hobbi1">react</label>
+            <input type="checkbox" id="hobbi1" name="hobbi" value="react">
+            <label for="hobbi2">html</label>
+            <input type="checkbox" id="hobbi2" name="hobbi" value="html">
+            <label for="hobbi3">css</label>
+            <input type="checkbox" id="hobbi3" name="hobbi" value="css">
+            <label for="hobbi4">js</label>
+            <input type="checkbox" id="hobbi4" name="hobbi" value="js">
+        </fieldset>
+
+        <fieldset>
+            <legend>Что выберешь</legend>
+            <label for="react">React</label>
+            <input type="radio" id="react" name="lang" value="react"><label for="Angular">Angular</label>
+            <input type="radio" id="Angular" name="lang" value="Angular"><label for="Vue">Vue</label>
+            <input type="radio" id="Vue" name="lang" value="Vue">
+        </fieldset>
+
+        <fieldset>
+            <legend>Срок обучения</legend>
+            <label for="period"></label>
+            <input type="range" name="period" id="period" min="0" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <label for="myfile">Отправить файл</label>
+            <input type="file" name="file" id="myfile">
+        </fieldset>
+        <input type="submit" value="Отправка формы">
+        <input type="reset" value="Сбросить">
+    </form>
+</body>
+
+</html>
